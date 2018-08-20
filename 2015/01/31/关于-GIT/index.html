@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="关于 Git 的一些命令">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="关于 GIT"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ZIN"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>关于 GIT - ZIN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Android 程序猿</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/zinmm">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://ooej45z5i.bkt.clouddn.com/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>关于 GIT</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-01-31
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Other/">#Other</a> <a href="/tags/Git/">#Git</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>关于 Git 的一些命令</p>
+<a id="more"></a>
+<blockquote>
+<p>创建git资源库.</p>
+</blockquote>
+<pre><code>git init --bare Jim&lt;库名称&gt;
+</code></pre><blockquote>
+<p>在用户文件夹下把资源clone下来.</p>
+</blockquote>
+<pre><code>git clone https://github.com/zinmm/Jim&lt;仓库目录&gt; C://User/&lt;本地目录&gt;
+
+需要注意的是clone时候用户目录必须为空
+</code></pre><p>创建一个文件，纳入到版本控制中.</p>
+<pre><code>git add &lt;文件名&gt;
+
+第一次执行会警告: warning: LF will be replaced by CRLF in readme.txt.
+
+The file will have its original line endings in your working directory.
+</code></pre><blockquote>
+<p>警告处理:需要配置用户信息.</p>
+</blockquote>
+<pre><code>git config user.name = &quot;zinmm&quot;
+
+git config user.email = &quot;zinmm@msn.cn&quot;
+</code></pre><blockquote>
+<p>提交到本地版本库里.</p>
+</blockquote>
+<pre><code>git commit &lt;文件名&gt;
+</code></pre><blockquote>
+<p>推送到远程共享版本库中.</p>
+</blockquote>
+<pre><code>git push origin master
+</code></pre><blockquote>
+<p>切换用户，拉取最新文件.</p>
+</blockquote>
+<pre><code>git pull
+</code></pre><p>git pull 之后有冲突，编辑完冲突后调用git commit -a 把当前目录中所有都提交到本地库中, git push origin master 提交到远程库中.</p>
+<blockquote>
+<p>删除远程分支并提交</p>
+</blockquote>
+<p>git branch -r -d origin/branch-name<br>git push origin :branch-name</p>
+<blockquote>
+<p>删除本地分支并提交</p>
+</blockquote>
+<p>git branch -d origin/branch-name<br>git push origin :branch-name</p>
+<p>…or create a new repository on the command line</p>
+<p>echo # walour &gt;&gt; README.mdgit initgit add README.mdgit commit -m “first commit”git remote add origin <a href="https://github.com/zinmm/walour.gitgit" target="_blank" rel="noopener">https://github.com/zinmm/walour.gitgit</a> push -u origin master</p>
+<p>…or push an existing repository from the command line</p>
+<p>git remote add origin <a href="https://github.com/zinmm/walour.gitgit" target="_blank" rel="noopener">https://github.com/zinmm/walour.gitgit</a> push -u origin master</p>
+<p>…or import code from another repository</p>
+<p>You can initialize this repository with code from a Subversion, Mercurial, or TFS project.</p>
+<p>Import code</p>
+<p><a href="http://git-scm.com/docs" target="_blank" rel="noopener">可参考网站</a>    <a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="noopener">练习</a> <a href="http://blog.csdn.net/hongshan50/article/details/22582049" target="_blank" rel="noopener">Bash配合EGit</a> <a href="http://blog.csdn.net/hongshan50/article/details/24622409" target="_blank" rel="noopener">git管理工具对比</a></p>
+<p>一些工具</p>
+<p>Git Bash VIM编辑器 SoureTree</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/zinmm" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:mailto:zinmm@msn.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="我们为什么会需要用到依赖注入">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="依赖注入"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ZIN"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>依赖注入 - ZIN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Android 程序猿</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/zinmm">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://ooej45z5i.bkt.clouddn.com/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>依赖注入</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-11-13
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Other/">#Other</a> <a href="/tags/Java/">#Java</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>我们为什么会需要用到依赖注入</p>
+<a id="more"></a>
+<p>依赖注入是面向对象编程的一种设计模式，目的就是为了降低耦合。</p>
+<h4 id="举个例子：就好比-IOC-和-AOP-有什么关系，IOC-主要是解耦和方便附加功能（用AOP实现）。"><a href="#举个例子：就好比-IOC-和-AOP-有什么关系，IOC-主要是解耦和方便附加功能（用AOP实现）。" class="headerlink" title="举个例子：就好比 IOC 和 AOP 有什么关系，IOC 主要是解耦和方便附加功能（用AOP实现）。"></a>举个例子：就好比 IOC 和 AOP 有什么关系，IOC 主要是解耦和方便附加功能（用AOP实现）。</h4><p>思想上就是</p>
+<p>上帝说，要有光，于是就有了光，谁给的光，造光的神啊，你只需要知道你要什么，你不需要知道怎么来的（比如：接口）。</p>
+<h5 id="再简单的例子：你是个富二代，你什么都不用操心，需要什么，开口就行，你的富爸爸（IOC-容器）会帮你搞定。"><a href="#再简单的例子：你是个富二代，你什么都不用操心，需要什么，开口就行，你的富爸爸（IOC-容器）会帮你搞定。" class="headerlink" title="再简单的例子：你是个富二代，你什么都不用操心，需要什么，开口就行，你的富爸爸（IOC 容器）会帮你搞定。"></a>再简单的例子：你是个富二代，你什么都不用操心，需要什么，开口就行，你的富爸爸（IOC 容器）会帮你搞定。</h5><h5 id="再简单举个例子：你在钓鱼，鱼就是接口-Fish，你的钓竿给了你鱼，可能是鲤鱼，也有可能是鲨鱼，这些鱼就是-Fish-的具体实现，而你不需要知道是什么鱼，只需要知道是鱼就行。"><a href="#再简单举个例子：你在钓鱼，鱼就是接口-Fish，你的钓竿给了你鱼，可能是鲤鱼，也有可能是鲨鱼，这些鱼就是-Fish-的具体实现，而你不需要知道是什么鱼，只需要知道是鱼就行。" class="headerlink" title="再简单举个例子：你在钓鱼，鱼就是接口 Fish，你的钓竿给了你鱼，可能是鲤鱼，也有可能是鲨鱼，这些鱼就是 Fish 的具体实现，而你不需要知道是什么鱼，只需要知道是鱼就行。"></a>再简单举个例子：你在钓鱼，鱼就是接口 Fish，你的钓竿给了你鱼，可能是鲤鱼，也有可能是鲨鱼，这些鱼就是 Fish 的具体实现，而你不需要知道是什么鱼，只需要知道是鱼就行。</h5><h4 id="接下来上码吧，也许还是码能快速理解"><a href="#接下来上码吧，也许还是码能快速理解" class="headerlink" title="接下来上码吧，也许还是码能快速理解"></a>接下来上码吧，也许还是码能快速理解</h4><p>以 Java 语言为例子，我们在码 code 的时候往往会用到别的类来实现一些功能，就像：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassA</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> ClassB classB;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">ClassA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.classB = <span class="keyword">new</span> ClassB();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">do</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    classB.action();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个时候就产生了耦合， ClassA 依赖于 ClassB，ClassA 必须借助 ClassB 来完成一些功能，然而我们再 ClassA 直接创建了 ClassB 的实例，产生了耦合性，违背了单一职责原则，ClassB 的实例不应由 ClassA 来完成，耦合偶上了，藕断丝连的，扩展性也会差很多，如果我们的 ClassB 在某一段时间之后加了成员变量，那么 ClassA 也就不得不改动构造方法了，这样就不符合开闭原则。         ps： 有多少小伙伴干了这事，自己默默地举起小爪子。</p>
+<h5 id="因此我们需要一种注入方式，将依赖注入到宿主类中，如："><a href="#因此我们需要一种注入方式，将依赖注入到宿主类中，如：" class="headerlink" title="因此我们需要一种注入方式，将依赖注入到宿主类中，如："></a>因此我们需要一种注入方式，将依赖注入到宿主类中，如：</h5><h6 id="通过set方法："><a href="#通过set方法：" class="headerlink" title="通过set方法："></a>通过set方法：</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassA</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> ClassB classB;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setClassB</span><span class="params">(ClassB classB)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.classB = classB;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="Interface"><a href="#Interface" class="headerlink" title="Interface :"></a>Interface :</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ClassBInterface</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">setClassB</span><span class="params">(ClassB classB)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CLassA</span> <span class="keyword">implements</span> <span class="title">ClassBInterface</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> ClassB classB;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">setClassB</span><span class="params">(ClassB classB)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.classB = classB;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="构造函数注入（Contructor-Injection）"><a href="#构造函数注入（Contructor-Injection）" class="headerlink" title="构造函数注入（Contructor Injection）"></a>构造函数注入（Contructor Injection）</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassA</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> ClassB classB;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">ClassA</span><span class="params">(ClassB classb)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.classB = classB;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="亦或者通过注解"><a href="#亦或者通过注解" class="headerlink" title="亦或者通过注解"></a>亦或者通过注解</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassA</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> <span class="keyword">private</span> ClassB classB;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>依赖注入降低了依赖和被依赖类型间的耦合，在修改被依赖的类型实现时，不需要修改依赖类型的实现，同时，对于依赖类型的测试，可以更方便的使用 Mocking Object 替代原有的被依赖类型，以达到对依赖对象独立进行单元测试的目的。</p>
+<p>最后需要注意的是，依赖注入只是控制反转的一种实现方式。控制反转还有一种常见的实现方式称为依赖查找。</p>
+<p>— END</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/zinmm" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:mailto:zinmm@msn.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

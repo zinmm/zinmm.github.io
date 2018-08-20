@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Python 有什么与众不同? 很多很多. 首先要指出 Python 有很多我们熟悉的东西, 类似于所有其它通用高级编程语言, Python 同样有 类、方法、语句、表达式、函数、操作符和模块等，Python 还有一些特别的东西，下面开始学习记录。">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Python 持续学习 - 初识 Python"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ZIN"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Python 持续学习 - 初识 Python - ZIN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Android 程序猿</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/zinmm">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://ooej45z5i.bkt.clouddn.com/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Python 持续学习 - 初识 Python</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-11-28
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Python/">#Python</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Python 有什么与众不同? 很多很多. 首先要指出 Python 有很多我们熟悉的东西, 类似于所有其它通用高级编程语言, Python 同样有 类、方法、语句、表达式、函数、操作符和模块等，Python 还有一些特别的东西，下面开始学习记录。</p>
+<a id="more"></a>
+<h2 id="简介？"><a href="#简介？" class="headerlink" title="简介？"></a>简介？</h2><p>有这么一个需求， 我需要在 PC、MAC、Android、IOS 不列举了，总之就是我需要一个能够跨平台部署的东西，没错 用 Python 就对了（别的 JavaWeb、RN 什么的这里不提），据说还能用 Python 爬些数据，重点是速度快，下面我们开始 Python 的学习。</p>
+<h2 id="开始-Python-环境搭建"><a href="#开始-Python-环境搭建" class="headerlink" title="开始 Python 环境搭建"></a>开始 Python 环境搭建</h2><h3 id="1-安装-Python-3"><a href="#1-安装-Python-3" class="headerlink" title="1. 安装 Python 3"></a>1. 安装 Python 3</h3><h5 id="你的计算机可能已经安装了某个版本的-Python，Mac-OS-X-会预装-Python-2，Linux-的大多数版本也是如此（也有可能是-Pyhon-3），但-Windows-不同，他没有内置任何版本，下面来检查计算机内是否内置有任何-Python-版本："><a href="#你的计算机可能已经安装了某个版本的-Python，Mac-OS-X-会预装-Python-2，Linux-的大多数版本也是如此（也有可能是-Pyhon-3），但-Windows-不同，他没有内置任何版本，下面来检查计算机内是否内置有任何-Python-版本：" class="headerlink" title="你的计算机可能已经安装了某个版本的 Python，Mac OS X 会预装 Python 2，Linux 的大多数版本也是如此（也有可能是 Pyhon 3），但 Windows 不同，他没有内置任何版本，下面来检查计算机内是否内置有任何 Python 版本："></a>你的计算机可能已经安装了某个版本的 Python，Mac OS X 会预装 Python 2，Linux 的大多数版本也是如此（也有可能是 Pyhon 3），但 Windows 不同，他没有内置任何版本，下面来检查计算机内是否内置有任何 Python 版本：</h5><h5 id="如果是-Mac-OS-X-或者-Linux-可以键入"><a href="#如果是-Mac-OS-X-或者-Linux-可以键入" class="headerlink" title="如果是 Mac OS X 或者 Linux 可以键入"></a>如果是 Mac OS X 或者 Linux 可以键入</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -v</span><br></pre></td></tr></table></figure>
+<h5 id="如果是-Windows-则键入"><a href="#如果是-Windows-则键入" class="headerlink" title="如果是 Windows 则键入"></a>如果是 Windows 则键入</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// path 是安装路径</span><br><span class="line">&#123;path&#125;/python.exe -v</span><br><span class="line"></span><br><span class="line">// 一般 Python 默认路径是</span><br><span class="line">c://Python31/python.exe -v</span><br></pre></td></tr></table></figure>
+<h5 id="或者你的操作系统没有安装任何的-Python-版本，-可以在-官网-针对自己的操作系统下载对应版本的-Python。"><a href="#或者你的操作系统没有安装任何的-Python-版本，-可以在-官网-针对自己的操作系统下载对应版本的-Python。" class="headerlink" title="或者你的操作系统没有安装任何的 Python 版本， 可以在 官网 针对自己的操作系统下载对应版本的 Python。"></a>或者你的操作系统没有安装任何的 Python 版本， 可以在 <a href="https://www.python.org/" target="_blank" rel="noopener">官网</a> 针对自己的操作系统下载对应版本的 Python。</h5><p><a href="https://www.python.org/ftp/python/3.6.3/python-3.6.3-macosx10.6.pkg" target="_blank" rel="noopener">MAC 版的 Python V3.6.3 的下载地址</a></p>
+<h5 id="安装-Python-3-完成，会有一个-IDLE-（-虽然我用-Item-2）这是-Python-的集成开发环境，-尽管简单，但极其有用。IDLE-包括一个能够利用颜色突出显示语法的编辑器、一个调试工具、Python-Shell，-以及一个完整的-Python-3-在线文档集。"><a href="#安装-Python-3-完成，会有一个-IDLE-（-虽然我用-Item-2）这是-Python-的集成开发环境，-尽管简单，但极其有用。IDLE-包括一个能够利用颜色突出显示语法的编辑器、一个调试工具、Python-Shell，-以及一个完整的-Python-3-在线文档集。" class="headerlink" title="安装 Python 3 完成，会有一个 IDLE （ 虽然我用 Item 2）这是 Python 的集成开发环境， 尽管简单，但极其有用。IDLE 包括一个能够利用颜色突出显示语法的编辑器、一个调试工具、Python Shell， 以及一个完整的 Python 3 在线文档集。"></a>安装 Python 3 完成，会有一个 IDLE （ 虽然我用 Item 2）这是 Python 的集成开发环境， 尽管简单，但极其有用。IDLE 包括一个能够利用颜色突出显示语法的编辑器、一个调试工具、Python Shell， 以及一个完整的 Python 3 在线文档集。</h5><h3 id="2-使用-IDLE-来包住学习-Python"><a href="#2-使用-IDLE-来包住学习-Python" class="headerlink" title="2. 使用 IDLE 来包住学习 Python"></a>2. 使用 IDLE 来包住学习 Python</h3><h5 id="IDLE-提供一个完备的代码编辑器，允许你在这个编辑其中编写代码，Python-Shell-可以在其中实验运行代码。总的来说-IDLE-的-shell-是真的强势棒棒哒，因为利用它可以在编写的同时运行-Python-代码。"><a href="#IDLE-提供一个完备的代码编辑器，允许你在这个编辑其中编写代码，Python-Shell-可以在其中实验运行代码。总的来说-IDLE-的-shell-是真的强势棒棒哒，因为利用它可以在编写的同时运行-Python-代码。" class="headerlink" title="IDLE 提供一个完备的代码编辑器，允许你在这个编辑其中编写代码，Python Shell 可以在其中实验运行代码。总的来说 IDLE 的 shell 是真的强势棒棒哒，因为利用它可以在编写的同时运行 Python 代码。"></a>IDLE 提供一个完备的代码编辑器，允许你在这个编辑其中编写代码，Python Shell 可以在其中实验运行代码。总的来说 IDLE 的 shell 是真的强势棒棒哒，因为利用它可以在编写的同时运行 Python 代码。</h5><h5 id="第一次启动-IDLE-的时候，会显示-“三个大于号”-的提示符（-gt-gt-gt-），可以再这里输入代码。shell-得到你的代码语句后会立即执行，并在屏幕显示生成结果。"><a href="#第一次启动-IDLE-的时候，会显示-“三个大于号”-的提示符（-gt-gt-gt-），可以再这里输入代码。shell-得到你的代码语句后会立即执行，并在屏幕显示生成结果。" class="headerlink" title="第一次启动 IDLE 的时候，会显示 “三个大于号” 的提示符（&gt;&gt;&gt;），可以再这里输入代码。shell 得到你的代码语句后会立即执行，并在屏幕显示生成结果。"></a>第一次启动 IDLE 的时候，会显示 “三个大于号” 的提示符（&gt;&gt;&gt;），可以再这里输入代码。shell 得到你的代码语句后会立即执行，并在屏幕显示生成结果。</h5><h5 id="IDLE-知道所有-Python-语法，它会提供-“完成提示”-（当你使用一个内置函数（如-print-）时，会弹出这种-“完成提示”）。Python-的码农通常把内置函数称为-BIF-（built-in-function）。print-BIF-的作用是把消息显示到标准输出（就是屏幕）。"><a href="#IDLE-知道所有-Python-语法，它会提供-“完成提示”-（当你使用一个内置函数（如-print-）时，会弹出这种-“完成提示”）。Python-的码农通常把内置函数称为-BIF-（built-in-function）。print-BIF-的作用是把消息显示到标准输出（就是屏幕）。" class="headerlink" title="IDLE 知道所有 Python 语法，它会提供 “完成提示” （当你使用一个内置函数（如 print()）时，会弹出这种 “完成提示”）。Python 的码农通常把内置函数称为 BIF （built-in function）。print() BIF 的作用是把消息显示到标准输出（就是屏幕）。"></a>IDLE 知道所有 Python 语法，它会提供 “完成提示” （当你使用一个内置函数（如 print()）时，会弹出这种 “完成提示”）。Python 的码农通常把内置函数称为 BIF （built-in function）。print() BIF 的作用是把消息显示到标准输出（就是屏幕）。</h5><h5 id="IDLE-使用区分颜色的语法来突出限时代吗。默认的，内置函数都是紫色，字符串是绿色，Python-语言的关键字（-如：if-）就是橙色。生成的所有结果显示为蓝色。如果你不喜欢这些颜色选择，只需要调整-IDLE-的首选项就可以很容易的改变颜色选择。"><a href="#IDLE-使用区分颜色的语法来突出限时代吗。默认的，内置函数都是紫色，字符串是绿色，Python-语言的关键字（-如：if-）就是橙色。生成的所有结果显示为蓝色。如果你不喜欢这些颜色选择，只需要调整-IDLE-的首选项就可以很容易的改变颜色选择。" class="headerlink" title="IDLE 使用区分颜色的语法来突出限时代吗。默认的，内置函数都是紫色，字符串是绿色，Python 语言的关键字（ 如：if ）就是橙色。生成的所有结果显示为蓝色。如果你不喜欢这些颜色选择，只需要调整 IDLE 的首选项就可以很容易的改变颜色选择。"></a>IDLE 使用区分颜色的语法来突出限时代吗。默认的，内置函数都是紫色，字符串是绿色，Python 语言的关键字（ 如：if ）就是橙色。生成的所有结果显示为蓝色。如果你不喜欢这些颜色选择，只需要调整 IDLE 的首选项就可以很容易的改变颜色选择。</h5><h5 id="另外，IDLE-也很清楚-Python-的缩进语法（-Python-要求代码块缩进-）。刚开始使用-Python-的时候，可能会很难适应这点，但是-IDLE-可以减轻你的负担，他会根据需要自动缩进。"><a href="#另外，IDLE-也很清楚-Python-的缩进语法（-Python-要求代码块缩进-）。刚开始使用-Python-的时候，可能会很难适应这点，但是-IDLE-可以减轻你的负担，他会根据需要自动缩进。" class="headerlink" title="另外，IDLE 也很清楚 Python 的缩进语法（ Python 要求代码块缩进 ）。刚开始使用 Python  的时候，可能会很难适应这点，但是 IDLE 可以减轻你的负担，他会根据需要自动缩进。"></a>另外，IDLE 也很清楚 Python 的缩进语法（ Python 要求代码块缩进 ）。刚开始使用 Python  的时候，可能会很难适应这点，但是 IDLE 可以减轻你的负担，他会根据需要自动缩进。</h5><h3 id="3-有效的使用-IDLE"><a href="#3-有效的使用-IDLE" class="headerlink" title="3. 有效的使用 IDLE"></a>3. 有效的使用 IDLE</h3><h5 id="IDLE-提供了大量特性，不过只需要了解其中一部分就可以很好的使用-IDLE。"><a href="#IDLE-提供了大量特性，不过只需要了解其中一部分就可以很好的使用-IDLE。" class="headerlink" title="IDLE 提供了大量特性，不过只需要了解其中一部分就可以很好的使用 IDLE。"></a>IDLE 提供了大量特性，不过只需要了解其中一部分就可以很好的使用 IDLE。</h5><h4 id="TAB-完成"><a href="#TAB-完成" class="headerlink" title="TAB 完成"></a>TAB 完成</h4><h5 id="先键入一些代码，然后按下-TAB-键，IDLE-会根据一些建议，帮你完成这个语句。"><a href="#先键入一些代码，然后按下-TAB-键，IDLE-会根据一些建议，帮你完成这个语句。" class="headerlink" title="先键入一些代码，然后按下 TAB 键，IDLE 会根据一些建议，帮你完成这个语句。"></a>先键入一些代码，然后按下 TAB 键，IDLE 会根据一些建议，帮你完成这个语句。</h5><h4 id="回退代码语句"><a href="#回退代码语句" class="headerlink" title="回退代码语句"></a>回退代码语句</h4><h5 id="按下-Alt-P，可以回退到-IDLE-中之前输入的代码语句。或者按下-Alt-N-可以移到下一个代码语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。"><a href="#按下-Alt-P，可以回退到-IDLE-中之前输入的代码语句。或者按下-Alt-N-可以移到下一个代码语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。" class="headerlink" title="按下 Alt + P，可以回退到 IDLE 中之前输入的代码语句。或者按下 Alt + N 可以移到下一个代码语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。"></a>按下 Alt + P，可以回退到 IDLE 中之前输入的代码语句。或者按下 Alt + N 可以移到下一个代码语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。</h5><h4 id="编辑回退的代码"><a href="#编辑回退的代码" class="headerlink" title="编辑回退的代码"></a>编辑回退的代码</h4><h5 id="一旦回退代码语句，-还可以进行编辑，并使用箭头键切换语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。"><a href="#一旦回退代码语句，-还可以进行编辑，并使用箭头键切换语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。" class="headerlink" title="一旦回退代码语句， 还可以进行编辑，并使用箭头键切换语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。"></a>一旦回退代码语句， 还可以进行编辑，并使用箭头键切换语句。可以编辑之前输入的任何语句，甚至是跨多行的代码语句。</h5><h4 id="调整-IDLE-的首选项"><a href="#调整-IDLE-的首选项" class="headerlink" title="调整 IDLE 的首选项"></a>调整 IDLE 的首选项</h4><h5 id="IDLE-的首选项对话框允许你私人定制-IDLE-的默认行为。有四个设置标签页可以调整，可以控制字体和-TAB-行为，改变突出显示语法所用的颜色，调整某些按键的组合行为，海军可以改变-IDLE-的启动设置。所以，如果你确实喜欢鲜艳的骚粉红色字符串，IDLE-会给你这个权利，可以改变-diamante-在屏幕上如何提示。"><a href="#IDLE-的首选项对话框允许你私人定制-IDLE-的默认行为。有四个设置标签页可以调整，可以控制字体和-TAB-行为，改变突出显示语法所用的颜色，调整某些按键的组合行为，海军可以改变-IDLE-的启动设置。所以，如果你确实喜欢鲜艳的骚粉红色字符串，IDLE-会给你这个权利，可以改变-diamante-在屏幕上如何提示。" class="headerlink" title="IDLE 的首选项对话框允许你私人定制 IDLE 的默认行为。有四个设置标签页可以调整，可以控制字体和 TAB 行为，改变突出显示语法所用的颜色，调整某些按键的组合行为，海军可以改变 IDLE 的启动设置。所以，如果你确实喜欢鲜艳的骚粉红色字符串，IDLE 会给你这个权利，可以改变 diamante 在屏幕上如何提示。"></a>IDLE 的首选项对话框允许你私人定制 IDLE 的默认行为。有四个设置标签页可以调整，可以控制字体和 TAB 行为，改变突出显示语法所用的颜色，调整某些按键的组合行为，海军可以改变 IDLE 的启动设置。所以，如果你确实喜欢鲜艳的骚粉红色字符串，IDLE 会给你这个权利，可以改变 diamante 在屏幕上如何提示。</h5><h2 id="Pyhton-之列表学习"><a href="#Pyhton-之列表学习" class="headerlink" title="Pyhton 之列表学习"></a>Pyhton 之列表学习</h2><h5 id="任何值得招收创建的程序都必然会处理数据，有些时候，数据很简单也很直接-——-很容易处理。但还有些情况下，所要处理的数据不论从结构还是含义上讲都很复杂，这就要求你花些功夫把它完全搞清楚，另外编写代码来处理这些数据更是需要花些心思。"><a href="#任何值得招收创建的程序都必然会处理数据，有些时候，数据很简单也很直接-——-很容易处理。但还有些情况下，所要处理的数据不论从结构还是含义上讲都很复杂，这就要求你花些功夫把它完全搞清楚，另外编写代码来处理这些数据更是需要花些心思。" class="headerlink" title="任何值得招收创建的程序都必然会处理数据，有些时候，数据很简单也很直接 —— 很容易处理。但还有些情况下，所要处理的数据不论从结构还是含义上讲都很复杂，这就要求你花些功夫把它完全搞清楚，另外编写代码来处理这些数据更是需要花些心思。"></a>任何值得招收创建的程序都必然会处理数据，有些时候，数据很简单也很直接 —— 很容易处理。但还有些情况下，所要处理的数据不论从结构还是含义上讲都很复杂，这就要求你花些功夫把它完全搞清楚，另外编写代码来处理这些数据更是需要花些心思。</h5><h5 id="为了降低复杂性，通常可以把数据组织为列表：可以有顾客列表、朋友鞋标、购物清单和待办事项清单等。由于用列表组织数据如此常见，Python-中可以很容易地利用代码创建和处理列表。"><a href="#为了降低复杂性，通常可以把数据组织为列表：可以有顾客列表、朋友鞋标、购物清单和待办事项清单等。由于用列表组织数据如此常见，Python-中可以很容易地利用代码创建和处理列表。" class="headerlink" title="为了降低复杂性，通常可以把数据组织为列表：可以有顾客列表、朋友鞋标、购物清单和待办事项清单等。由于用列表组织数据如此常见，Python 中可以很容易地利用代码创建和处理列表。"></a>为了降低复杂性，通常可以把数据组织为列表：可以有顾客列表、朋友鞋标、购物清单和待办事项清单等。由于用列表组织数据如此常见，Python 中可以很容易地利用代码创建和处理列表。</h5><h2 id="01-创建简单的-Python-列表"><a href="#01-创建简单的-Python-列表" class="headerlink" title="01. 创建简单的 Python 列表"></a>01. 创建简单的 Python 列表</h2><h3 id="从简单的数据开始下手，例如：我要购买一台新的牛逼的台式电脑，我们会有以下的数据列表。"><a href="#从简单的数据开始下手，例如：我要购买一台新的牛逼的台式电脑，我们会有以下的数据列表。" class="headerlink" title="从简单的数据开始下手，例如：我要购买一台新的牛逼的台式电脑，我们会有以下的数据列表。"></a>从简单的数据开始下手，例如：我要购买一台新的牛逼的台式电脑，我们会有以下的数据列表。</h3><h5 id="CPU-i7-8700K-￥3199"><a href="#CPU-i7-8700K-￥3199" class="headerlink" title="CPU: i7 8700K        ￥3199"></a>CPU: i7 8700K        ￥3199</h5><h5 id="VGA-1080Ti-￥7200"><a href="#VGA-1080Ti-￥7200" class="headerlink" title="VGA: 1080Ti            ￥7200"></a>VGA: 1080Ti            ￥7200</h5><h5 id="SIMM-16G-3200-￥2100"><a href="#SIMM-16G-3200-￥2100" class="headerlink" title="SIMM: 16G 3200        ￥2100"></a>SIMM: 16G 3200        ￥2100</h5><h5 id="MAINBOARD-Z370-￥3200"><a href="#MAINBOARD-Z370-￥3200" class="headerlink" title="MAINBOARD: Z370    ￥3200"></a>MAINBOARD: Z370    ￥3200</h5><h5 id="total-￥15699"><a href="#total-￥15699" class="headerlink" title="total: ￥15699"></a>total: ￥15699</h5><h4 id="这就是我们的数据，什么内存条贵了？我们不讨论这个，回到正题，接下来我们从这配置清单列表开始入手，在此基础上逐步的深入；"><a href="#这就是我们的数据，什么内存条贵了？我们不讨论这个，回到正题，接下来我们从这配置清单列表开始入手，在此基础上逐步的深入；" class="headerlink" title="这就是我们的数据，什么内存条贵了？我们不讨论这个，回到正题，接下来我们从这配置清单列表开始入手，在此基础上逐步的深入；"></a>这就是我们的数据，什么内存条贵了？我们不讨论这个，回到正题，接下来我们从这配置清单列表开始入手，在此基础上逐步的深入；</h4><h4 id="为了把人可读的列表转为-Python-可读的列表，需要遵循以下条件："><a href="#为了把人可读的列表转为-Python-可读的列表，需要遵循以下条件：" class="headerlink" title="为了把人可读的列表转为 Python 可读的列表，需要遵循以下条件："></a>为了把人可读的列表转为 Python 可读的列表，需要遵循以下条件：</h4><ol>
+<li>在数据两边加 “” 双引号，将各个配件转换为字符串；</li>
+<li>用逗号将列表项余下一项分隔开来；</li>
+<li>在列表的两边加上开始和结束中括号；</li>
+<li>使用 = 赋值操作符将这个列表赋值到一个标识符，也就是变量；</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mountings = [</span><br><span class="line">    <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">    <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="完全可以把创建列表的代码放在一行上（当然，前提是假设你有足够的空间，全部都能放在一行上放下，我那是老码农为了简洁看起来舒服的写法）"><a href="#完全可以把创建列表的代码放在一行上（当然，前提是假设你有足够的空间，全部都能放在一行上放下，我那是老码农为了简洁看起来舒服的写法）" class="headerlink" title="完全可以把创建列表的代码放在一行上（当然，前提是假设你有足够的空间，全部都能放在一行上放下，我那是老码农为了简洁看起来舒服的写法）:"></a>完全可以把创建列表的代码放在一行上（当然，前提是假设你有足够的空间，全部都能放在一行上放下，我那是老码农为了简洁看起来舒服的写法）:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mountings = [<span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>, <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span>]</span><br></pre></td></tr></table></figure>
+<h5 id="疑惑了吧，是不是感觉少了点东西，没错就是变量类型，Python-不需要知道变量类型，像-Kotlin-都需要个-var-来标识，Python-就是这么的任性，不需要知道声明是什么类型的变量，”Python-是世界上最好最简单的语言！“（-虽然我并不赞同这样的做法，感觉很突兀-）"><a href="#疑惑了吧，是不是感觉少了点东西，没错就是变量类型，Python-不需要知道变量类型，像-Kotlin-都需要个-var-来标识，Python-就是这么的任性，不需要知道声明是什么类型的变量，”Python-是世界上最好最简单的语言！“（-虽然我并不赞同这样的做法，感觉很突兀-）" class="headerlink" title="疑惑了吧，是不是感觉少了点东西，没错就是变量类型，Python 不需要知道变量类型，像 Kotlin 都需要个 var 来标识，Python 就是这么的任性，不需要知道声明是什么类型的变量，”Python 是世界上最好最简单的语言！“（ 虽然我并不赞同这样的做法，感觉很突兀 ）"></a>疑惑了吧，是不是感觉少了点东西，没错就是变量类型，Python 不需要知道变量类型，像 Kotlin 都需要个 var 来标识，Python 就是这么的任性，不需要知道声明是什么类型的变量，”Python 是世界上最好最简单的语言！“（ 虽然我并不赞同这样的做法，感觉很突兀 ）</h5><h2 id="02-列表就像是数组"><a href="#02-列表就像是数组" class="headerlink" title="02. 列表就像是数组"></a>02. 列表就像是数组</h2><h4 id="在-Python-中创建一个列表时，解析器会在内存中创建一个类似数组的数据结构来存储数据，列表中的每个数据项都有一个与之关联的数值偏移量，数据项是以堆的形式存放数据，自下而上先进后出的概念形成一个堆栈。类似于其它编程语言中的数组技术，堆栈中的第一个数据是从-0-开始的"><a href="#在-Python-中创建一个列表时，解析器会在内存中创建一个类似数组的数据结构来存储数据，列表中的每个数据项都有一个与之关联的数值偏移量，数据项是以堆的形式存放数据，自下而上先进后出的概念形成一个堆栈。类似于其它编程语言中的数组技术，堆栈中的第一个数据是从-0-开始的" class="headerlink" title="在 Python 中创建一个列表时，解析器会在内存中创建一个类似数组的数据结构来存储数据，列表中的每个数据项都有一个与之关联的数值偏移量，数据项是以堆的形式存放数据，自下而上先进后出的概念形成一个堆栈。类似于其它编程语言中的数组技术，堆栈中的第一个数据是从 0 开始的"></a>在 Python 中创建一个列表时，解析器会在内存中创建一个类似数组的数据结构来存储数据，列表中的每个数据项都有一个与之关联的数值偏移量，数据项是以堆的形式存放数据，自下而上先进后出的概念形成一个堆栈。类似于其它编程语言中的数组技术，堆栈中的第一个数据是从 0 开始的</h4><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z370</td>
+<td>3</td>
+</tr>
+<tr>
+<td>16G 3200</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1080TI</td>
+<td>1</td>
+</tr>
+<tr>
+<td>i7 8700K</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="03-使用中括号记法访问列表数据"><a href="#03-使用中括号记法访问列表数据" class="headerlink" title="03. 使用中括号记法访问列表数据"></a>03. 使用中括号记法访问列表数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(mountings[0])</span><br></pre></td></tr></table></figure>
+<h5 id="应该看出来了-print-是打印用的，嗯，和别的编程语言一样数组使用中括号是可以获取到数据的"><a href="#应该看出来了-print-是打印用的，嗯，和别的编程语言一样数组使用中括号是可以获取到数据的" class="headerlink" title="应该看出来了 print 是打印用的，嗯，和别的编程语言一样数组使用中括号是可以获取到数据的"></a>应该看出来了 print 是打印用的，嗯，和别的编程语言一样数组使用中括号是可以获取到数据的</h5><h4 id="打开-IDEL-试试手："><a href="#打开-IDEL-试试手：" class="headerlink" title="打开 IDEL 试试手："></a>打开 IDEL 试试手：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line">mountings = [</span><br><span class="line">    <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">    <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span></span><br><span class="line">]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">0</span>])</span><br><span class="line">i7 <span class="number">8700</span>k</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">1</span>])</span><br><span class="line"><span class="number">1080</span>TI</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">2</span>])</span><br><span class="line"><span class="number">16</span>G <span class="number">3200</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">3</span>])</span><br><span class="line">Z370</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">4</span>])</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#6&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    print(mountings[<span class="number">4</span>])</span><br><span class="line">IndexError: list index out of range</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="编码体验还是阔以滴，比较棒，相比其它编程体验来讲是全新的，下面有故意报错，并且也提示了-list-index-out-of-range"><a href="#编码体验还是阔以滴，比较棒，相比其它编程体验来讲是全新的，下面有故意报错，并且也提示了-list-index-out-of-range" class="headerlink" title="编码体验还是阔以滴，比较棒，相比其它编程体验来讲是全新的，下面有故意报错，并且也提示了 list index out of range"></a>编码体验还是阔以滴，比较棒，相比其它编程体验来讲是全新的，下面有故意报错，并且也提示了 list index out of range</h5><h4 id="Pythin-中的列表看起来像极了数组，不过还不只有这些，列表是完备的-Python-集合对象，也就是说，列表通过列表方法的形式提供了一些现成的功能。"><a href="#Pythin-中的列表看起来像极了数组，不过还不只有这些，列表是完备的-Python-集合对象，也就是说，列表通过列表方法的形式提供了一些现成的功能。" class="headerlink" title="Pythin 中的列表看起来像极了数组，不过还不只有这些，列表是完备的 Python 集合对象，也就是说，列表通过列表方法的形式提供了一些现成的功能。"></a>Pythin 中的列表看起来像极了数组，不过还不只有这些，列表是完备的 Python 集合对象，也就是说，列表通过列表方法的形式提供了一些现成的功能。</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">    <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">    <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span></span><br><span class="line">]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">0</span>])</span><br><span class="line">i7 <span class="number">8700</span>k</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">1</span>])</span><br><span class="line"><span class="number">1080</span>TI</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">2</span>])</span><br><span class="line"><span class="number">16</span>G <span class="number">3200</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">3</span>])</span><br><span class="line">Z370</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">4</span>])</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#21&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    print(mountings[<span class="number">4</span>])</span><br><span class="line">IndexError: list index out of range</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings.append(<span class="string">"DELL"</span>);</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">4</span>])</span><br><span class="line">DELL</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings)</span><br><span class="line">[<span class="string">'i7 8700k'</span>, <span class="string">'1080TI'</span>, <span class="string">'16G 3200'</span>, <span class="string">'Z370'</span>, <span class="string">'DELL'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings.pop()</span><br><span class="line"><span class="string">'DELL'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings)</span><br><span class="line">[<span class="string">'i7 8700k'</span>, <span class="string">'1080TI'</span>, <span class="string">'16G 3200'</span>, <span class="string">'Z370'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings.extend([</span><br><span class="line">    <span class="string">"DELL"</span>, <span class="string">"USCORSAIR"</span></span><br><span class="line">  ])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings)</span><br><span class="line">[<span class="string">'i7 8700k'</span>, <span class="string">'1080TI'</span>, <span class="string">'16G 3200'</span>, <span class="string">'Z370'</span>, <span class="string">'DELL'</span>, <span class="string">'USCORSAIR'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings.remove(<span class="string">"USCORSAIR"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings)</span><br><span class="line">[<span class="string">'i7 8700k'</span>, <span class="string">'1080TI'</span>, <span class="string">'16G 3200'</span>, <span class="string">'Z370'</span>, <span class="string">'DELL'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings.insert(<span class="number">4</span>, <span class="string">"USCORSAIR"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings)</span><br><span class="line">[<span class="string">'i7 8700k'</span>, <span class="string">'1080TI'</span>, <span class="string">'16G 3200'</span>, <span class="string">'Z370'</span>, <span class="string">'USCORSAIR'</span>, <span class="string">'DELL'</span>]</span><br></pre></td></tr></table></figure>
+<h5 id="无须描述了吧，这个列表操作的各种插入、各种查询、各种删除操作，对了，Python-列表是一个高层集合，支持混合类型，比如你在数组里面插入了字符串，你还可以插入整形，没错，很奇妙吧，去试试吧。"><a href="#无须描述了吧，这个列表操作的各种插入、各种查询、各种删除操作，对了，Python-列表是一个高层集合，支持混合类型，比如你在数组里面插入了字符串，你还可以插入整形，没错，很奇妙吧，去试试吧。" class="headerlink" title="无须描述了吧，这个列表操作的各种插入、各种查询、各种删除操作，对了，Python 列表是一个高层集合，支持混合类型，比如你在数组里面插入了字符串，你还可以插入整形，没错，很奇妙吧，去试试吧。"></a>无须描述了吧，这个列表操作的各种插入、各种查询、各种删除操作，对了，Python 列表是一个高层集合，支持混合类型，比如你在数组里面插入了字符串，你还可以插入整形，没错，很奇妙吧，去试试吧。</h5><h2 id="04-处理列表数据"><a href="#04-处理列表数据" class="headerlink" title="04. 处理列表数据"></a>04. 处理列表数据</h2><h5 id="来点好玩的，比如打印一堆数据，想到了什么，没错，循环打印，目前有两种方法"><a href="#来点好玩的，比如打印一堆数据，想到了什么，没错，循环打印，目前有两种方法" class="headerlink" title="来点好玩的，比如打印一堆数据，想到了什么，没错，循环打印，目前有两种方法"></a>来点好玩的，比如打印一堆数据，想到了什么，没错，循环打印，目前有两种方法</h5><ol>
+<li><p>for 循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">        <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">        <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span></span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>// each_flick 就是目标标识符 </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>// <span class="keyword">in</span> 将目标标识符与列表分隔开来</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>// : 冒号标识列表处理 code 开始</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> each_flick <span class="keyword">in</span> mountings:</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(each_flick)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>while 循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">        <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">        <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span></span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>count = <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>// count 用来自增到 &lt; mountings 的长度位置 <span class="keyword">while</span> 停止</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">while</span> count &lt; len(mountings)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>count = count + <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[count])</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="05-在列表中存储列表、查找列表、处理复杂数据、处理多层嵌套列表"><a href="#05-在列表中存储列表、查找列表、处理复杂数据、处理多层嵌套列表" class="headerlink" title="05. 在列表中存储列表、查找列表、处理复杂数据、处理多层嵌套列表"></a>05. 在列表中存储列表、查找列表、处理复杂数据、处理多层嵌套列表</h2><h5 id="下面来一个更有意思的玩意儿-list-嵌套-list"><a href="#下面来一个更有意思的玩意儿-list-嵌套-list" class="headerlink" title="下面来一个更有意思的玩意儿 list 嵌套 list"></a>下面来一个更有意思的玩意儿 list 嵌套 list</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">      <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">      <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span>, [<span class="string">"logitech"</span>, [<span class="string">"HHKB"</span>]]</span><br><span class="line">  ]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(mountings[<span class="number">4</span>][<span class="number">0</span>][<span class="number">0</span>])</span><br><span class="line">HHKB</span><br></pre></td></tr></table></figure>
+<h5 id="看出来了吧，很有意思，可以多次的嵌套下去，还是和上条一样打印全部如果只是-for-打印的话打印到-list-的时候会把-list-给打印出来而不会把-list-的元素打印出来"><a href="#看出来了吧，很有意思，可以多次的嵌套下去，还是和上条一样打印全部如果只是-for-打印的话打印到-list-的时候会把-list-给打印出来而不会把-list-的元素打印出来" class="headerlink" title="看出来了吧，很有意思，可以多次的嵌套下去，还是和上条一样打印全部如果只是 for 打印的话打印到 list 的时候会把 list 给打印出来而不会把 list 的元素打印出来"></a>看出来了吧，很有意思，可以多次的嵌套下去，还是和上条一样打印全部如果只是 for 打印的话打印到 list 的时候会把 list 给打印出来而不会把 list 的元素打印出来</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">      <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">      <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span>, [<span class="string">"logitech"</span>, [<span class="string">"HHKB"</span>]]</span><br><span class="line">  ]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> each_flick <span class="keyword">in</span> mountings:</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(each_flick)</span><br><span class="line">i7 <span class="number">8700</span>k <span class="number">1080</span>TI <span class="number">16</span>G <span class="number">3200</span> Z370 [<span class="string">"logitech"</span>, [<span class="string">"HHKB"</span>]]</span><br></pre></td></tr></table></figure>
+<h5 id="总的来说就是-mountings-有-3层-list-而-for-循环打印出了第一层，如还不明白，可以去试试写-Java-取-Json-数据那可比这个嵌套有意思。"><a href="#总的来说就是-mountings-有-3层-list-而-for-循环打印出了第一层，如还不明白，可以去试试写-Java-取-Json-数据那可比这个嵌套有意思。" class="headerlink" title="总的来说就是 mountings 有 3层 list 而 for 循环打印出了第一层，如还不明白，可以去试试写 Java 取 Json 数据那可比这个嵌套有意思。"></a>总的来说就是 mountings 有 3层 list 而 for 循环打印出了第一层，如还不明白，可以去试试写 Java 取 Json 数据那可比这个嵌套有意思。</h5><h5 id="那么有什么解决方案呢，没错多次-for-循环，只需要判断下个打印对象是否是-list-就行了"><a href="#那么有什么解决方案呢，没错多次-for-循环，只需要判断下个打印对象是否是-list-就行了" class="headerlink" title="那么有什么解决方案呢，没错多次 for 循环，只需要判断下个打印对象是否是 list 就行了"></a>那么有什么解决方案呢，没错多次 for 循环，只需要判断下个打印对象是否是 list 就行了</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mountings = [</span><br><span class="line">      <span class="string">"i7 8700k"</span>, <span class="string">"1080TI"</span>,</span><br><span class="line">      <span class="string">"16G 3200"</span>, <span class="string">"Z370"</span>, [<span class="string">"logitech"</span>, [<span class="string">"HHKB"</span>]]</span><br><span class="line">    ]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(mountings, list)</span><br></pre></td></tr></table></figure>
+<h5 id="isinstance-判断对象-类型-达到条件即可为-true-然后继续-for-循环即可"><a href="#isinstance-判断对象-类型-达到条件即可为-true-然后继续-for-循环即可" class="headerlink" title="isinstance(判断对象, 类型) 达到条件即可为 true 然后继续 for 循环即可"></a>isinstance(判断对象, 类型) 达到条件即可为 true 然后继续 for 循环即可</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> mounting <span class="keyword">in</span> mountings:</span><br><span class="line">  <span class="keyword">if</span> isinstance(mountings, list)</span><br><span class="line">    <span class="keyword">for</span> nested_item <span class="keyword">in</span> mounting</span><br><span class="line">        print(nested_item)</span><br><span class="line">  <span class="keyword">else</span> </span><br><span class="line">    print(mounting)</span><br></pre></td></tr></table></figure>
+<h5 id="再多嵌套几层的话，还得继续编写-for-if-是不是觉得很蠢，咱们继续看下面"><a href="#再多嵌套几层的话，还得继续编写-for-if-是不是觉得很蠢，咱们继续看下面" class="headerlink" title="再多嵌套几层的话，还得继续编写 for if 是不是觉得很蠢，咱们继续看下面"></a>再多嵌套几层的话，还得继续编写 for if 是不是觉得很蠢，咱们继续看下面</h5><h4 id="PS-在-Python-或-IDEA-shell-中：码入-dir-builtins-可以看到-Python-提供的内置方法列表，查看某个-BIF-的作用，如-input，可以在-shell-码入-help-input-就可以获得-input-的功能描述，目前为止-Python-大概提供了有-70-多个-BIF"><a href="#PS-在-Python-或-IDEA-shell-中：码入-dir-builtins-可以看到-Python-提供的内置方法列表，查看某个-BIF-的作用，如-input，可以在-shell-码入-help-input-就可以获得-input-的功能描述，目前为止-Python-大概提供了有-70-多个-BIF" class="headerlink" title="PS: 在 Python 或 IDEA shell 中：码入 dir(_builtins_) 可以看到 Python 提供的内置方法列表，查看某个 BIF 的作用，如 input，可以在 shell 码入 help(input) 就可以获得 input 的功能描述，目前为止 Python 大概提供了有 70 多个 BIF;"></a>PS: 在 Python 或 IDEA shell 中：码入 <code>dir(_builtins_)</code> 可以看到 Python 提供的内置方法列表，查看某个 BIF 的作用，如 input，可以在 shell 码入 help(input) 就可以获得 input 的功能描述，目前为止 Python 大概提供了有 70 多个 BIF;</h4><h2 id="06-不要重复；应当创建一个函数"><a href="#06-不要重复；应当创建一个函数" class="headerlink" title="06. 不要重复；应当创建一个函数"></a>06. 不要重复；应当创建一个函数</h2><h5 id="前面讲到如果-list-结构够复杂，我们的嵌套也就多，作为一个牛逼逼的程序员怎么能干这种蠢事呢，那么怎么解决，方法有很多比如递归"><a href="#前面讲到如果-list-结构够复杂，我们的嵌套也就多，作为一个牛逼逼的程序员怎么能干这种蠢事呢，那么怎么解决，方法有很多比如递归" class="headerlink" title="前面讲到如果 list 结构够复杂，我们的嵌套也就多，作为一个牛逼逼的程序员怎么能干这种蠢事呢，那么怎么解决，方法有很多比如递归"></a>前面讲到如果 list 结构够复杂，我们的嵌套也就多，作为一个牛逼逼的程序员怎么能干这种蠢事呢，那么怎么解决，方法有很多比如递归</h5><h5 id="创建函数的方法"><a href="#创建函数的方法" class="headerlink" title="创建函数的方法"></a>创建函数的方法</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> 函数名 <span class="params">(参数)</span>:</span></span><br></pre></td></tr></table></figure>
+<h5 id="ps-参数可选冒号表示函数代码开始，规范学习一定要注意缩进"><a href="#ps-参数可选冒号表示函数代码开始，规范学习一定要注意缩进" class="headerlink" title="ps : 参数可选冒号表示函数代码开始，规范学习一定要注意缩进"></a>ps : 参数可选冒号表示函数代码开始，规范学习一定要注意缩进</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_lol</span> <span class="params">(the_list)</span>:</span></span><br><span class="line">  <span class="keyword">for</span> mounting <span class="keyword">in</span> the_list:</span><br><span class="line">    <span class="keyword">if</span> isinstance(mountings, list)</span><br><span class="line">      print_lol(mountings)</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">      print(mounting)</span><br></pre></td></tr></table></figure>
+<h5 id="看看使用递归即可减少-“冗余”-的代码了，这整洁骚气的代码才是我们程序员应该有的"><a href="#看看使用递归即可减少-“冗余”-的代码了，这整洁骚气的代码才是我们程序员应该有的" class="headerlink" title="看看使用递归即可减少 “冗余” 的代码了，这整洁骚气的代码才是我们程序员应该有的"></a>看看使用递归即可减少 “冗余” 的代码了，这整洁骚气的代码才是我们程序员应该有的</h5>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/zinmm" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:mailto:zinmm@msn.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

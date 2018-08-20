@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="什么是 Docker简介：Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台。
+Docker是一个开源的引">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Docker 入门"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ZIN"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Docker 入门 - ZIN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Android 程序猿</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/zinmm">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://ooej45z5i.bkt.clouddn.com/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Docker 入门</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-10-26
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Other/">#Other</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="什么是-Docker"><a href="#什么是-Docker" class="headerlink" title="什么是 Docker"></a>什么是 Docker</h3><p><strong>简介</strong>：Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台。</p>
+<p>Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、<a href="http://www.whatis.com.cn/word_5275.htm" target="_blank" rel="noopener">bare metal</a>、OpenStack 集群和其他的基础应用平台。 </p>
+<h4 id="Docker通常用于如下场景："><a href="#Docker通常用于如下场景：" class="headerlink" title="Docker通常用于如下场景："></a>Docker通常用于如下场景：</h4><ul>
+<li>web应用的自动化打包和发布；</li>
+<li>自动化测试和持续集成、发布；</li>
+<li>在服务型环境中部署和调整数据库或其他的后台应用；</li>
+<li>从头编译或者扩展现有的OpenShift或Cloud Foundry平台来搭建自己的PaaS环境。</li>
+</ul>
+<hr>
+<h3 id="关于-Docker-入门教程"><a href="#关于-Docker-入门教程" class="headerlink" title="关于 Docker 入门教程"></a>关于 Docker 入门教程</h3><p>docker入门教程来自docker官方网站的Docker getting started 教程，官方网站：<a href="https://docs.docker.com/linux/started/" target="_blank" rel="noopener">https://docs.docker.com/linux/started/</a></p>
+<p>官方网站是一个交互的教程，在左侧是相应的说明，右侧是一个交互的终端，输入预期的目录，可以跳到下一步，大家可以参考我们的翻译，在官网上面运行相应的命令，以验证效果。</p>
+<hr>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>Docker系统有两个程序：docker服务端和docker客户端。其中docker服务端是一个服务进程，管理着所有的容器。docker客户端则扮演着docker服务端的远程控制器，可以用来控制docker的服务端进程。大部分情况下，docker服务端和客户端运行在一台机器上。</p>
+<h4 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h4><p>检查docker的版本，这样可以用来确认docker服务在运行并可通过客户端链接。</p>
+<h4 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h4><p>可以通过在终端输入docker命令来查看所有的参数。</p>
+<p>官网的在线模拟器只提供了有限的命令，无法保证所有的命令可以正确执行。</p>
+<h4 id="正确的命令："><a href="#正确的命令：" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p><strong>$docker version</strong></p>
+<hr>
+<h3 id="搜索可用-Docker-镜像"><a href="#搜索可用-Docker-镜像" class="headerlink" title="搜索可用 Docker 镜像"></a>搜索可用 Docker 镜像</h3><p>使用docker最简单的方式莫过于从现有的容器镜像开始。Docker官方网站专门有一个页面来存储所有可用的镜像，网址是：<a href="http://index.docker.io/" target="_blank" rel="noopener">index.docker.io</a>。你可以通过浏览这个网页来查找你想要使用的镜像，或者使用命令行的工具来检索。</p>
+<h4 id="目标：-1"><a href="#目标：-1" class="headerlink" title="目标："></a>目标：</h4><p>学会使用命令行的工具来检索名字叫做tutorial的镜像。</p>
+<h4 id="提示：-1"><a href="#提示：-1" class="headerlink" title="提示："></a>提示：</h4><p>命令行的格式为：docker search 镜像名字</p>
+<h4 id="正确的命令：-1"><a href="#正确的命令：-1" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p>$<strong>docker search tutorial</strong></p>
+<hr>
+<h3 id="下载容器镜像"><a href="#下载容器镜像" class="headerlink" title="下载容器镜像"></a>下载容器镜像</h3><p>下载镜像的命令非常简单，使用docker pull命令即可。(译者按：docker命令和git有一些类似的地方）。在docker的镜像索引网站上面，镜像都是按照<strong>用户名/**</strong>镜像名<strong>的方式来存储的。有一组比较特殊的镜像，比如ubuntu这类基础镜像，经过官方的验证，值得信任，可以直接用</strong>镜像名**来检索到。</p>
+<h4 id="目标：-2"><a href="#目标：-2" class="headerlink" title="目标："></a>目标：</h4><p>通过docker命令下载tutorial镜像。</p>
+<h4 id="提示：-2"><a href="#提示：-2" class="headerlink" title="提示："></a>提示：</h4><p>执行pull命令的时候要写完整的名字，比如”learn/tutorial”。</p>
+<h4 id="正确的命令：-2"><a href="#正确的命令：-2" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p>$<strong>docker pull learn/tutorial</strong></p>
+<hr>
+<h3 id="在-Docker-容器中运行-hello-world"><a href="#在-Docker-容器中运行-hello-world" class="headerlink" title="在 Docker 容器中运行 hello world!"></a>在 Docker 容器中运行 hello world!</h3><p>docker容器可以理解为在沙盒中运行的进程。这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。</p>
+<h4 id="目标：-3"><a href="#目标：-3" class="headerlink" title="目标："></a>目标：</h4><p>在我们刚刚下载的镜像中输出”hello word”。为了达到这个目的，我们需要在这个容器中运行”echo”命令，输出”hello word”。</p>
+<h4 id="提示：-3"><a href="#提示：-3" class="headerlink" title="提示："></a>提示：</h4><p>docker run命令有两个参数，一个是镜像名，一个是要在镜像中运行的命令。</p>
+<h4 id="正确的命令：-3"><a href="#正确的命令：-3" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p>$<strong>docker run learn/tutorial echo “hello word”</strong></p>
+<hr>
+<h3 id="在容器中安装新的程序"><a href="#在容器中安装新的程序" class="headerlink" title="在容器中安装新的程序"></a>在容器中安装新的程序</h3><p>下一步我们要做的事情是在容器里面安装一个简单的程序(ping)。我们之前下载的tutorial镜像是基于ubuntu的，所以你可以使用ubuntu的apt-get命令来安装ping程序：<strong>apt-get install -y ping</strong>。</p>
+<p>备注：apt-get 命令执行完毕之后，容器就会停止，但对容器的改动不会丢失。</p>
+<h4 id="目标：-4"><a href="#目标：-4" class="headerlink" title="目标："></a>目标：</h4><p>在learn/tutorial镜像里面安装ping程序。</p>
+<h4 id="提示：-4"><a href="#提示：-4" class="headerlink" title="提示："></a>提示：</h4><p>在执行apt-get 命令的时候，要带上-y参数。如果不指定-y参数的话，apt-get命令会进入交互模式，需要用户输入命令来进行确认，但在docker环境中是无法响应这种交互的。</p>
+<h4 id="正确的命令：-4"><a href="#正确的命令：-4" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p><strong>$docker run learn/tutorial apt-get install -y ping</strong></p>
+<hr>
+<h3 id="保存对容器的修改"><a href="#保存对容器的修改" class="headerlink" title="保存对容器的修改"></a>保存对容器的修改</h3><p>当你对某一个容器做了修改之后（通过在容器中运行某一个命令），可以把对容器的修改保存下来，这样下次可以从保存后的最新状态运行该容器。docker中保存状态的过程称之为committing，它保存的新旧状态之间的区别，从而产生一个新的版本。</p>
+<h4 id="目标：-5"><a href="#目标：-5" class="headerlink" title="目标："></a>目标：</h4><p>首先使用<strong>docker ps -l</strong>命令获得安装完ping命令之后容器的id。然后把这个镜像保存为learn/ping。</p>
+<h4 id="提示：-5"><a href="#提示：-5" class="headerlink" title="提示："></a>提示：</h4><ol>
+<li>运行docker commit，可以查看该命令的参数列表。</li>
+<li>你需要指定要提交保存容器的ID。(译者按：通过docker ps -l 命令获得)</li>
+<li>无需拷贝完整的id，通常来讲最开始的三至四个字母即可区分。（译者按：非常类似git里面的版本号)</li>
+</ol>
+<h4 id="正确的命令：-5"><a href="#正确的命令：-5" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p>$<strong>docker commit 698 learn/ping</strong></p>
+<hr>
+<h3 id="运行新的镜像"><a href="#运行新的镜像" class="headerlink" title="运行新的镜像"></a>运行新的镜像</h3><p>ok，到现在为止，你已经建立了一个完整的、自成体系的docker环境，并且安装了ping命令在里面。它可以在任何支持docker环境的系统中运行啦！(译者按：是不是很神奇呢？)让我们来体验一下吧！</p>
+<h4 id="目标：-6"><a href="#目标：-6" class="headerlink" title="目标："></a>目标：</h4><p>在新的镜像中运行ping <a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 命令。</p>
+<h4 id="提示：-6"><a href="#提示：-6" class="headerlink" title="提示："></a>提示：</h4><p>一定要使用新的镜像名<strong>learn/ping</strong>来运行ping命令。(译者按：最开始下载的learn/tutorial镜像中是没有ping命令的)</p>
+<h4 id="正确的命令：-6"><a href="#正确的命令：-6" class="headerlink" title="正确的命令："></a>正确的命令：</h4><p><strong>$docker run lean/ping ping <a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a></strong></p>
+<hr>
+<h3 id="检查运行中的镜像"><a href="#检查运行中的镜像" class="headerlink" title="检查运行中的镜像"></a>检查运行中的镜像</h3><p>现在你已经运行了一个docker容器，让我们来看下正在运行的容器。</p>
+<p>使用docker ps命令可以查看所有正在运行中的容器列表，使用docker inspect命令我们可以查看更详细的关于某一个容器的信息。</p>
+<h4 id="目标：-7"><a href="#目标：-7" class="headerlink" title="目标："></a>目标：</h4><p>查找某一个运行中容器的id，然后使用docker inspect命令查看容器的信息。</p>
+<h4 id="提示：-7"><a href="#提示：-7" class="headerlink" title="提示："></a>提示：</h4><p>可以使用镜像id的前面部分，不需要完整的id。</p>
+<p>正确的命令：</p>
+<p>$ <strong>docker inspect efe</strong></p>
+<hr>
+<h3 id="发布自己的镜像"><a href="#发布自己的镜像" class="headerlink" title="发布自己的镜像"></a>发布自己的镜像</h3><p>现在我们已经验证了新镜像可以正常工作，下一步我们可以将其发布到官方的索引网站。还记得我们最开始下载的learn/tutorial镜像吧，我们也可以把我们自己编译的镜像发布到索引页面，一方面可以自己重用，另一方面也可以分享给其他人使用。</p>
+<h4 id="目标：-8"><a href="#目标：-8" class="headerlink" title="目标："></a>目标：</h4><p>把learn/ping镜像发布到docker的index网站。</p>
+<h4 id="提示：-8"><a href="#提示：-8" class="headerlink" title="提示："></a>提示：</h4><ol>
+<li>docker images命令可以列出所有安装过的镜像。</li>
+<li>docker push命令可以将某一个镜像发布到官方网站。</li>
+<li>你只能将镜像发布到自己的空间下面。这个模拟器登录的是learn帐号。</li>
+</ol>
+<h4 id="预期的命令："><a href="#预期的命令：" class="headerlink" title="预期的命令："></a>预期的命令：</h4><p><strong>$ docker push learn/ping</strong></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/zinmm" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:mailto:zinmm@msn.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

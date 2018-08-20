@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="用以提高 App 启动速度的提升">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Android 快速启动"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ZIN"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Android 快速启动 - ZIN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Android 程序猿</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/zinmm">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://ooej45z5i.bkt.clouddn.com/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Android 快速启动</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-11-01
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Android/">#Android</a> <a href="/tags/Optimize/">#Optimize</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>用以提高 App 启动速度的提升</p>
+<a id="more"></a> 
+<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>新建一个项目， Run 之后 App 启动或者用户从 Launcher 点击图标启动 App 的过程就可以感受到启动速度之慢，当首次打开的界面有一定的复杂渲染也跟着费时起来，所以我们经常会在启动显示的第一个页面只显示一张图，这样的话就会减轻渲染的压力，从而进一步的提升启动速度。</p>
+<p>But</p>
+<p>这还是会有一定的渲染时间，在启动的过程中，系统会需要给 App 创建一个进程，进程的创建和初始化都是耗时的，大家都知道 Activity 的绘制也是需要时间的，所以  系统框架设计了一个 StartWindow 的窗口，在 Activity 的    Window 绘制完成之前显示的就是这个 StartWindow， 所以从 Click Lanucher 图标到绘制等一系列准备过程完成之前显示的就是这个 StartWindow，也就是大家看到的黑屏或者别的什么，默认颜色是随着指定的 Theme 展示的，然而 StartWindow 是可以定制的，说到这里大家应该已经想到解决方案了，没错，我第一个解决方案就是把它设为透明的，效果就是 Click Lanucher 图标后，看到的还是桌面，待等待准备工作完成才进入到界面，第一版就准备这样上线了。</p>
+<p>当初没记错的话是 15 年还使用了 Ijiami 进行项目代码加密，上线第二天就收到反馈软件打不开，特么的吓得我赶紧看了 线上 Bug list，ANR！！ 没错就是 ANR，当然不排除是用户猴急等了很长时间没反应于是狂滑别的地方，But 自己试了也是会 ANR，版本普遍基本是 5.0，之后试过 Qihu、Tencent、Bangcle 等加密方案均有此问题，问过相关技术人员，基本敷衍盖过，以至于之后就没用过加密，期间有表示已修复 5.0 的问题，试了还是有毛病。</p>
+<p>回到正题</p>
+<p>已知设为透明是存在一定的问题的，于是改进，把 StartWindow BackGround 设为和启动页一个颜色，或者直接给启动页截图（UI 妹妹给和启动页一模一样的图，不要截图，不同分辨率的手机可能存在锯齿等问题）</p>
+<h3 id="StartWindow-Color-BackGround"><a href="#StartWindow-Color-BackGround" class="headerlink" title="StartWindow Color BackGround"></a>StartWindow Color BackGround</h3><p>设置为颜色背景前提是在启动页有纯色的背景，给用户一种障眼法，虽然看到了颜色但是其实系统还处于给 App 分配进程等一系列操作中，这种方式为最优。</p>
+<h3 id="StartWindow-Image-BackGround"><a href="#StartWindow-Image-BackGround" class="headerlink" title="StartWindow Image BackGround"></a>StartWindow Image BackGround</h3><p>设置为图片背景，有毛病但是体验最佳，毛病在哪呢，魅族等手机屏幕尺寸很恶心，不走寻常路的，是会使图片变形的，当然也有解决方案，但是没试过，不过基本原理上来讲是行得通的可用的方法就是不同屏幕放不同图片，可能会有用吧。</p>
+<h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">parent</span>=<span class="string">"Theme.AppCompat.Light.NoActionBar"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowBackground"</span>&gt;</span>填写颜色或者图片做背景<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowActionBar"</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span> // 不显示 ActionBar</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowNoTitle"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span>    // 不显示 title</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="附加项"><a href="#附加项" class="headerlink" title="附加项"></a>附加项</h4><h5 id="level-19"><a href="#level-19" class="headerlink" title="level 19"></a>level 19</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowTranslucentStatus"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span>  // 透明状态栏</span><br></pre></td></tr></table></figure>
+<h5 id="leve-21"><a href="#leve-21" class="headerlink" title="leve 21"></a>leve 21</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowDrawsSystemBarBackgrounds"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span>                      // 是否需要系统栏背景</span><br><span class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:statusBarColor"</span>&gt;</span>#00000000 or @android:color/transparent<span class="tag">&lt;/<span class="name">item</span>&gt;</span>    // 系统栏背景颜色</span><br></pre></td></tr></table></figure>
+<p>关于 leve 就是在对应的 value 文件夹下加入不同的代码如 values-19、 values-21 等这是我目前知道的窗口改动.</p>
+<h5 id="下面是窗口全透明也就是那个失败案例"><a href="#下面是窗口全透明也就是那个失败案例" class="headerlink" title="下面是窗口全透明也就是那个失败案例"></a>下面是窗口全透明也就是那个失败案例</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowIsTranslucent"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span>  // 窗口全透明</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p><br></p>
+<p><br>                                                                                                                                —— END. ——</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/zinmm" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:mailto:zinmm@msn.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
